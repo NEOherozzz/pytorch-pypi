@@ -111,7 +111,6 @@ if `git diff-index --quiet HEAD`
 then
   echo "no update found in PyTorch main index."
   updateHumanIndexes
-  exit 0
 fi
 echo "updates found in PyTorch main index: updating also compute platform specific ones..."
 
