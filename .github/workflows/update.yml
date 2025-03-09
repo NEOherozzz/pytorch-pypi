@@ -19,6 +19,9 @@ jobs:
         with:
           ref: 'gh-pages'
           path: 'gh-pages'
+      
+      - name: Grant execute permission
+        run: chmod +x ./update-pytorch-nightly.sh
 
       - name: Update Reports
         run: ./update-pytorch-nightly.sh
